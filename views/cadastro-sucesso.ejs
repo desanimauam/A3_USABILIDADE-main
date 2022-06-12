@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>muito gostoso ;)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link rel="icon" href="img/man-cook_1f468-200d-1f373.ico">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #15b7b9;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">muito gostoso</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/cadastro-receitas">Envie sua receita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/show">Receitas enviadas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <body>
+
+        <h3>Cadastro realizado com sucesso!</h3>
+        <BR></BR>
+        <form action="/delete" method="delete">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static receitas-cards">
+                                <strong class="d-inline-block mb-2 text-success">vocês enviaram</strong>
+                                <h3 class="mb-0"><%= rnome %></h3>
+                                <div class="mb-1 text-muted">Tempo de preparo: <%= tppreparo %> minuto(s)</div>
+                                <div class="mb-1 text-muted">Rendimento: <%= rporcoes %> pessoa(s)</div>
+                                <p class="mb-auto p-card"><%= rpreparo %></p>
+                                <a href="/show" class="stretched-link link-success">Ler mais</a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img class="receitas-img bd-placeholder-img img-fluid rounded" role="img" width="250"
+                                    height="300" src="img/postImage.JPG" alt="food image">
+                            </div>
+                        </div>
+                        <input type="submit" name="Excluir" value="Excluir registro" class="botao">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <p><strong>muito gostoso - all rights reserved Ⓒ 2022</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

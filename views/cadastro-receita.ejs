@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>muito gostoso ;)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link rel="icon" href="img/man-cook_1f468-200d-1f373.ico">
+</head>
+
+<body class="d-flex flex-column h-100 body-cadastro">
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #15b7b9;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">muito gostoso</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/cadastro-receitas">Envie sua receita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/show">Receitas enviadas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="main">
+        <div class="container-fluid">
+            <form action="/success" method="post">
+                <div class="enviar_receita">
+
+                    <h4 class="titulocadastro">ENVIAR RECEITA</h4>
+
+                    <div class="formulario">
+
+                        <input type="text" name="nome_receita" placeholder="Nome da Receita" class="texto" required><br>
+                        <br>
+
+                        <label for="preparo">Tempo de Preparo: </label>
+                        <input type="number" name="tpreparo" class="textin" required>
+                        <label for="preparo">minutos</label> <br> <br>
+
+                        <label for="porcoes">Porções: </label>
+                        <input type="number" name="porcoes" class="textin" required>
+                        <label for="preparo">porções</label><br> <br>
+
+                        <label for="categoria">Escolha uma Categoria: </label>
+
+                        <select name="categoria" id="categoria">
+                            <option value="Bolos e Tortas Doces">Bolos e Tortas Doces</option>
+                            <option value="Carnes">Carnes</option>
+                            <option value="Aves">Aves</option>
+                            <option value="Peixes e Frutos do Mar">Peixes e Frutos do Mar</option>
+                            <option value="Saladas, Molhos e Acompanhamentos">Saladas, Molhos e Acompanhamentos</option>
+                            <option value="Sopas">Sopas</option>
+                            <option value="Massas">Massas</option>
+                            <option value="Bebidas">Bebidas</option>
+                            <option value="Doces e Sobremesas">Doces e Sobremesas</option>
+                            <option value="Lanches">Lanches</option>
+                            <option value="Prato Unico">Prato Unico</option>
+                            <option value="Light">Light</option>
+                            <option value="Alimentacao">Alimentação Saudável</option>
+                        </select><br><br>
+                    </div>
+
+
+                    <h4 class="titulocadastro">INGREDIENTES</H4>
+                    <p>Escreva cada ingrediente por linha e, para separar, não use hífen, numeração ou outro marcador.
+                    </p>
+                    <textarea type="text" name="ingredientes" placeholder="Ex: 3 ovos" class="textao" required></textarea><br><br>
+
+                    <h4 class="titulocadastro">MODO DE PREPARO</h4>
+                    <p>Descreva os passos por linha e, para separar, não use hífen, numeração ou outro marcador.</p>
+                    <textarea type="text" name="modo_preparo" placeholder="Ex: bata todos os ingredientes..."
+                        class="textao" required></textarea><br><br>
+
+                    <input type="submit" name="enviar" value="Enviar Receita" class="botao"><br><br>
+                </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <p><strong>muito gostoso - all rights reserved Ⓒ 2022</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
